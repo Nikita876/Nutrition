@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MealCategoryInfoView" customModule="NutritionAppTZ" customModuleProvider="target">
+            <connections>
+                <outlet property="calorieLabel" destination="IBe-uT-WrM" id="nVp-0p-XwF"/>
+                <outlet property="calorieNumberLabel" destination="mdw-aU-Jue" id="uDp-Oj-1oJ"/>
+                <outlet property="mealCategoryLabel" destination="aXF-DS-vm0" id="02w-7U-NrJ"/>
+                <outlet property="timeLabel" destination="3rt-jt-i7W" id="V9t-vD-WQF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="88" height="166"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1FP-0d-WWC">
+                    <rect key="frame" x="22" y="30" width="44" height="71.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01:12 pm" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rt-jt-i7W">
+                            <rect key="frame" x="0.0" y="0.0" width="44" height="20.5"/>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="298" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdw-aU-Jue">
+                            <rect key="frame" x="0.0" y="25.5" width="26" height="20.5"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kcal" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBe-uT-WrM">
+                            <rect key="frame" x="0.0" y="51" width="23.5" height="20.5"/>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fC-D7-QWg">
+                    <rect key="frame" x="66" y="4" width="18" height="22"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="plus" catalog="system"/>
+                    <connections>
+                        <action selector="plusButtonPressed" destination="-1" eventType="touchUpInside" id="lRY-di-6dk"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breakfast" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXF-DS-vm0">
+                    <rect key="frame" x="15.5" y="126.5" width="57.5" height="18"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4fC-D7-QWg" secondAttribute="trailing" constant="4" id="BtZ-c7-mLF"/>
+                <constraint firstItem="aXF-DS-vm0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Euy-my-2bW"/>
+                <constraint firstItem="aXF-DS-vm0" firstAttribute="top" secondItem="1FP-0d-WWC" secondAttribute="bottom" constant="25" id="cdo-gF-aQv"/>
+                <constraint firstItem="4fC-D7-QWg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="j54-1Z-sHy"/>
+                <constraint firstItem="1FP-0d-WWC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="qEe-Uy-kFw"/>
+                <constraint firstItem="1FP-0d-WWC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="twJ-b4-GHE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-239" y="-121"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
